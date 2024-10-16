@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/e983f43ae5.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        /* لضبط الفيديو ليكون ضمن حدود 800 بكسل */
+        video.background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            max-height: 600px; /* الحد الأقصى للارتفاع */
+            object-fit: cover;
+            z-index: -1; /* لكي يكون الفيديو في الخلفية */
+        }
+
+        /* لضبط ارتفاع الهيدر ليأخذ مساحة الفيديو */
+        header {
+            height: 600px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* تنسيق القائمة العلوية */
+        .nav-links ul {
+            position: absolute;
+            top: 4px;
+            left: 20px;
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            color: #d9c26f;
+        }
+
+        /* لضمان أن "منتجاتنا" تظهر في منتصف الصفحة */
+        .center-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2; /* تأكد من أن النص فوق الفيديو */
+            background-color: rgba(0, 0, 0, 0.5); /* إضافة خلفية شفافة للنص */
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="relative h-[600px] overflow-hidden">
+    
+    <ul class="absolute top-4 left-20 flex space-x-6">
+        <li><a href="contact.html" class="text-white hover:text-[#d9c26f]">اتصل بنا</a></li>
+        <li><a href="careers.html" class="text-white hover:text-[#d9c26f]">التوظيف</a></li>
+        <li><a href="about_us.html" class="text-white hover:text-[#d9c26f]">عن الشركة</a></li>
+        <li><a href="prodct.html" class="text-white hover:text-[#d9c26f]">منتجاتنا</a></li>
+        <li><a href="index.html" class="text-white hover:text-[#d9c26f]">الرئيسية</a></li>
+    </ul>
+
+    <div>
+        <img src="/src/img/logo.png" alt="" class="z-30 absolute top-4 right-20 w-20 h-20">
+    </div>
+
+    <!-- النص في منتصف الصفحة -->
+    <div class="center-content">
+        <div class="text-3xl text-[#d9c26f] font-bold">
+            منتجاتنا
+        </div>
+    </div>
+
+    <video autoplay loop muted class="background-video">
+        <source src="/src/vid/WhatsApp Video 2024-09-15 at 9.53.19 AM.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+
+</header>
+
+<!-- المحتوى الرئيسي -->
+<div class="content">
+    <!-- المنتجات -->
+    <div class="text-center bg-[#faf8ef] pb-16 px-10">
+        <div class="flex justify-center flex-wrap pt-10">
+            <!-- منتج 1 -->
+            <div class="m-6 h-[320px] w-[280px] bg-white shadow-lg hover:shadow-2xl ">
+                <img class="h-[70%] w-full object-cover" src="/src/img/bred.jpeg" alt="خبز برجر طازج">
+                <p class="text-[#CDA661] m-5 text-center text-md font-sans font-bold">خبز برجر طازج</p>
+            </div>
+            <!-- منتج 2 -->
+            <div class="m-6 h-[320px] w-[280px] bg-white shadow-lg hover:shadow-2xl">
+                <img class="h-[70%] w-full object-cover" src="/src/img/bred1.jpeg" alt="فطائر منوعة">
+                <p class="text-[#CDA661] m-5 text-center text-md font-sans font-bold">فطائر منوعة</p>
+            </div>
+            <!-- منتج 3 -->
+            <div class="m-6 h-[320px] w-[280px] bg-white shadow-lg hover:shadow-2xl">
+                <img class="h-[70%] w-full object-cover" src="/src/img/ash.jpeg" alt="عش البلبل">
+                <p class="text-[#CDA661] m-5 text-center text-md font-sans font-bold">عش البلبل</p>
+            </div>
+            <!-- منتج 4 -->
+            <div class="m-6 h-[320px] w-[280px] bg-white shadow-lg hover:shadow-2xl">
+                <img class="h-[70%] w-full object-cover" src="/src/img/bred11.jpeg" alt="كيك">
+                <p class="text-[#CDA661] m-5 text-center text-md font-sans font-bold">كيك</p>
+            </div>
+
+            <!-- منتج 5 -->
+            <div class="m-6 h-[320px] w-[280px] bg-white shadow-lg hover:shadow-2xl">
+                <img class="h-[70%] w-full object-cover" src="/src/img/byglya.jpeg" alt="كيك">
+                <p class="text-[#CDA661] m-5 text-center text-md font-sans font-bold">كيك</p>
+            </div>
+            <!-- منتج 6 -->
+            <div class="m-6 h-[320px] w-[280px] bg-white shadow-lg hover:shadow-2xl">
+                <img class="h-[70%] w-full object-cover" src="/src/img/mafen.jpeg" alt="مافن">
+                <p class="text-[#CDA661] m-5 text-center text-md font-sans font-bold">مافن</p>
+            </div>
+            <!-- منتج 7 -->
+            <div class="m-6 h-[320px] w-[280px] bg-white shadow-lg hover:shadow-2xl">
+                <img class="h-[70%] w-full object-cover" src="/src/img/mamole.jpeg" alt="معمول">
+                <p class="text-[#CDA661] m-5 text-center text-md font-sans font-bold">معمول</p>
+            </div>
+            <!-- منتج 8 -->
+            <!-- منتج 8 -->
+            <div class="m-6 h-[320px] w-[280px] bg-white shadow-lg hover:shadow-2xl">
+                <img class="h-[70%] w-full object-cover" src="/src/img/trimeso.jpeg" alt="تيراميسو">
+                <p class="text-[#CDA661] m-5 text-center text-md font-sans font-bold">تيراميسو</p>
+            </div>
+        </div>
+</div>
+    <!-- الفوتر -->
+    
+    <footer class="bg-gray-900 p-10 font-[sans-serif] tracking-wide flex ">
+
+        <div class="flex ml-[150px] mt-8">
+            <div><p class="text-white flex ml-[110px] font-sans mb-3 ">عنوان الشركة</p>
+
+                <div class="flex text-[#a8aeac] font-serif "><p class="m-2 text-sm font-semibold  ml-[70px]">المستودعات ,عنيزة,56463</p>
+                    <i class="fa-solid fa-location-dot fa-lg mt-4" style="color: #c0a456;"></i></div>
+
+                    <div class="flex text-[#a8aeac] font-serif ">
+                        <p  class="m-2 text-sm font-semibold ml-[125px]">0581472005</p>
+                        <i class="fa-brands fa-whatsapp fa-lg mt-4" style="color: #c0a456;"></i>
+                    </div>
+
+
+                    <div class="flex text-[#a8aeac] font-serif "> <a href="tel:+966581472005" class="m-2 text-sm font-semibold ml-[125px]" >0581472005</a>
+               <i class="fa-solid fa-phone fa-lg mt-4" style="color: #c0a456;"></i></div>
+               <div>
+                <div class="flex text-[#a8aeac] font-serif "> <a href="mailto:roqnkamhyathr@gmail.com " class="m-2 text-xs font-semibold ml-[30px]">roqnkamhyathr@gmail.com</a>
+                     <i class="fa-solid fa-envelope fa-lg mt-4  " style="color: #c0a456;"></i> </div>
+
+               </div>
+
+            
+            
+            
+
+        </div>
+        </div>
+
+        <div class="flex mt-8">
+            <div><p class="text-white flex ml-[90px] font-sans mb-3">التواصل الاجتماعي</p>
+
+                <div class="flex text-white font-serif ml-[90px] ">
+                    <p class="text-[#a8aeac] m-2 text-sm font-semibold"><a href="https://www.snapchat.com/add/ruknkamhiat">ruknkamhiat</a></p>
+                    <i class="fa-brands fa-snapchat fa-lg mt-4" style="color: #c0a456;"></i>
+                </div>
+
+                <div class="flex text-white font-serif ml-[90px] ">
+                    <p class="text-[#a8aeac] m-2 text-sm font-semibold"><a href="https://www.instagram.com/ruknkamhiat/?igshid=NTc4MTIwNjQ2YQ%3D%3D">ruknkamhiat</a> </p>
+                    <i class="fa-brands fa-instagram fa-lg mt-4" style="color: #c0a456;"></i>
+                </div>
+
+                <div class="flex text-white font-serif ml-[90px] ">
+                    <p class="text-[#a8aeac] m-2 text-sm font-semibold"><a href="https://www.instagram.com/ruknkamhiat/?hl=ar">ruknkamhiat</a> </p>
+                    <i class="fa-brands fa-tiktok fa-lg mt-4"style="color: #c0a456;"></i>
+                </div>
+
+
+
+        </div>
+        </div>
+
+        <div class="flex mt-8">
+            <div class="font-sans mb-3">
+                <p class="text-white flex ml-[110px] font-sans mb-3">روابط مهمه</p>
+                <p class=" flex ml-[130px] text-[#a8aeac] mt-2  font-semibold font-serif">اتصل بنا</p>
+                <p class="text-[#a8aeac]  mt-2 font-semibold flex ml-[130px] font-serif">من نحن</p>
+                <p class="text-[#a8aeac]  mt-2 font-semibold flex ml-[130px] font-serif">منتجاتنا</p>
+            </div>
+        </div>
+
+        <div><a href=""><img src="/src/img/logo.png" alt="" class=" ml-[200px] w-48"></a>
+        <p class="ml-[200px] font-sans text-[#c0a456] font-bold">مخابز وحلويات ركن قمحيات</p>
+        <p class="ml-[215px] font-sans text-[#a8aeac] font-extralight text-[8px]">Qamhiyat Corner Bakeries and Sweets</p>
+
+        </div>
+
+
+
+    </footer>
+    <div class="bg-gray-900 pb-10 font-[sans-serif] tracking-wide  ">
+        <p class="text-[#a8aeac] text-center">جميع الحقوق محفوظة © 2024</p>
+    </div>
+
+</div>
+
+</body>
+</html>

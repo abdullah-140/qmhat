@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التوظيف</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/e983f43ae5.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        .bg-background {
+            position: relative;
+        }
+
+        .bg-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .bg-content a {
+            pointer-events: auto; /* يسمح للروابط بالتفاعل */
+        }
+
+        form {
+            max-width: 1200px;
+            margin: 50px auto;
+            background-color: #f5f0e1;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #663e18;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #d9c26f;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #d9c26f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        form button:hover {
+            background-color: #c0a456;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الخلفية والهيدر -->
+    <div class="bg-[url('/src/img/Image.jpg')] bg-cover h-[400px] opacity-100 flex justify-center items-center relative bg-background">
+        <div class="bg-content">
+            <ul class="absolute top-4 left-20 flex space-x-6">
+                <li class=""><a href="contact.html" class="text-white hover:text-[#d9c26f]">اتصل بنا</a></li>
+                <li><a href="careers.html" class="text-white hover:text-[#d9c26f]">التوظيف</a></li>
+                <li><a href="about_us.html" class="text-white hover:text-[#d9c26f]">عن الشركة</a></li>
+                <li><a href="prodct.html" class="text-white hover:text-[#d9c26f]">منتجاتنا</a></li>
+                <li><a href="index.html" class="text-white hover:text-[#d9c26f]">الرئيسية</a></li>
+            </ul>
+            <div class="absolute top-4 right-20">
+                <a href="index.html"><img class="w-20 h-20" src="/src/img/logo.png" alt="لوغو"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- نموذج التوظيف -->
+    <form action="/submit-career" method="POST">
+        <h2 class="text-2xl font-bold text-center mb-6">التقديم على وظيفة</h2>
+
+        <label for="name">الاسم الكامل</label>
+        <input type="text" id="name" name="name" required placeholder="أدخل اسمك الكامل">
+
+        <label for="email">البريد الإلكتروني</label>
+        <input type="email" id="email" name="email" required placeholder="أدخل بريدك الإلكتروني">
+
+        <label for="job">الوظيفة المطلوبة</label>
+        <input type="text" id="job" name="job" required placeholder="أدخل الوظيفة المطلوبة">
+
+        <label for="cv">أرفق سيرتك الذاتية</label>
+        <input type="file" id="cv" name="cv" required>
+
+        <label for="message">رسالة</label>
+        <textarea id="message" name="message" rows="4" placeholder="أدخل رسالة توضيحية (اختياري)"></textarea>
+
+        <button type="submit">إرسال الطلب</button>
+    </form>
+
+    <!-- الفوتر -->
+    <footer class="bg-gray-900 p-10 font-[sans-serif] tracking-wide flex ">
+
+        <div class="flex ml-[150px] mt-8">
+            <div>
+                <p class="text-white flex ml-[110px] font-sans mb-3">عنوان الشركة</p>
+                <div class="flex text-[#a8aeac] font-serif">
+                    <p class="m-2 text-sm font-semibold ml-[70px]">المستودعات ,عنيزة,56463</p>
+                    <i class="fa-solid fa-location-dot fa-lg mt-4" style="color: #c0a456;"></i>
+                </div>
+                <div class="flex text-[#a8aeac] font-serif">
+                    <p class="m-2 text-sm font-semibold ml-[125px]">0581472005</p>
+                    <i class="fa-brands fa-whatsapp fa-lg mt-4" style="color: #c0a456;"></i>
+                </div>
+                <div class="flex text-[#a8aeac] font-serif">
+                    <a href="tel:+966581472005" class="m-2 text-sm font-semibold ml-[125px]">0581472005</a>
+                    <i class="fa-solid fa-phone fa-lg mt-4" style="color: #c0a456;"></i>
+                </div>
+                <div>
+                    <div class="flex text-[#a8aeac] font-serif">
+                        <a href="mailto:roqnkamhyathr@gmail.com" class="m-2 text-xs font-semibold ml-[30px]">roqnkamhyathr@gmail.com</a>
+                        <i class="fa-solid fa-envelope fa-lg mt-4" style="color: #c0a456;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex mt-8">
+            <div>
+                <p class="text-white flex ml-[90px] font-sans mb-3">التواصل الاجتماعي</p>
+                <div class="flex text-white font-serif ml-[90px]">
+                    <p class="text-[#a8aeac] m-2 text-sm font-semibold"><a href="https://www.snapchat.com/add/ruknkamhiat">ruknkamhiat</a></p>
+                    <i class="fa-brands fa-snapchat fa-lg mt-4" style="color: #c0a456;"></i>
+                </div>
+                <div class="flex text-white font-serif ml-[90px]">
+                    <p class="text-[#a8aeac] m-2 text-sm font-semibold"><a href="https://www.instagram.com/ruknkamhiat/?igshid=NTc4MTIwNjQ2YQ%3D%3D">ruknkamhiat</a></p>
+                    <i class="fa-brands fa-instagram fa-lg mt-4" style="color: #c0a456;"></i>
+                </div>
+                <div class="flex text-white font-serif ml-[90px]">
+                    <p class="text-[#a8aeac] m-2 text-sm font-semibold"><a href="https://www.instagram.com/ruknkamhiat/?hl=ar">ruknkamhiat</a></p>
+                    <i class="fa-brands fa-tiktok fa-lg mt-4" style="color: #c0a456;"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex mt-8">
+            <div class="font-sans mb-3">
+                <p class="text-white flex ml-[110px] font-sans mb-3">روابط مهمة</p>
+                <p class="flex ml-[130px] text-[#a8aeac] mt-2 font-semibold font-serif">اتصل بنا</p>
+                <p class="text-[#a8aeac] mt-2 font-semibold flex ml-[130px] font-serif">من نحن</p>
+                <p class="text-[#a8aeac] mt-2 font-semibold flex ml-[130px] font-serif">منتجاتنا</p>
+            </div>
+        </div>
+
+        <div>
+            <a href=""><img src="/src/img/logo.png" alt="" class="ml-[200px] w-48"></a>
+            <p class="ml-[200px] font-sans text-[#c0a456] font-bold">مخابز وحلويات ركن قمحيات</p>
+            <p class="ml-[215px] font-sans text-[#a8aeac] font-extralight text-[8px]">Qamhiyat Corner Bakeries and Sweets</p>
+        </div>
+
+    </footer>
+    <div class="bg-gray-900 pb-10 font-[sans-serif] tracking-wide">
+        <p class="text-[#a8aeac] text-center">جميع الحقوق محفوظة © 2024</p>
+    </div>
+
+</body>
+</html>

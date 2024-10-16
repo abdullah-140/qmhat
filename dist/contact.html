@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/e983f43ae5.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        .bg-background {
+            position: relative;
+            
+        }
+
+        .bg-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .bg-content a {
+            pointer-events: auto;
+        }
+
+        /* تصميم نموذج الاتصال */
+        form {
+            max-width: 1200px;
+            margin: 50px auto;
+            background-color: #f5f0e1;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #663e18;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #d9c26f;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #d9c26f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        form button:hover {
+            background-color: #c0a456;
+        }
+
+        /* تصميم عرض الفروع */
+        .branches-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .branch {
+            background-color: #f5f0e1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            
+        }
+
+        .branch h3 {
+            color: #663e18;
+            margin-bottom: 10px;
+        }
+
+        .branch p {
+            color: #7d7d7d;
+        }
+
+        /* ساعات العمل */
+        .working-hours {
+            color: #663e18;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* خريطة جوجل */
+        .map-container {
+            width: 100%;
+            height: 400px;
+            margin: 50px 0;
+        }
+
+    </style> 
+</head>
+<body>
+
+    <!-- الخلفية والهيدر -->
+    <div class="bg-[url('/src/img/Image.jpg')] bg-cover h-[400px] opacity-100 flex justify-center items-center relative bg-background">
+        <div class="bg-content">
+            <ul class="absolute top-4 left-20 flex space-x-6">
+                <li class=""><a href="contact.html" class="text-white hover:text-[#d9c26f]">اتصل بنا</a></li>
+                <li><a href="careers.html" class="text-white hover:text-[#d9c26f]">التوظيف</a></li>
+                <li><a href="about_us.html" class="text-white hover:text-[#d9c26f]">عن الشركة</a></li>
+                <li><a href="prodct.html" class="text-white hover:text-[#d9c26f]">منتجاتنا</a></li>
+                <li><a href="index.html" class="text-white hover:text-[#d9c26f]">الرئيسية</a></li>
+            </ul>
+            <div class="absolute top-4 right-20">
+                <a href="index.html"><img class="w-20 h-20" src="/src/img/logo.png" alt="لوغو"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- نموذج الاتصال -->
+   
+<div class=" text-center bg-[#f5f0e1]"><p class="  text-5xl font-sans font-semibold  text-[#d9c26f] mt-2 mb-2">اماكن</p>
+    <p class="  text-3xl font-sans font-semibold mb-2 text-[#663e18]">فروعنا</p>
+</div>
+    <!-- عرض الفروع وساعات العمل -->
+    <div class="branches-container ">
+
+       <a href="https://maps.app.goo.gl/DwvixTjcXHBCJokP9" target="_blank"><div class="branch ">
+        <h3>فرع عنيزة</h3>
+        <p> الشبيلي، السليمانية</p>
+        <p class="working-hours">ساعات العمل: 7 صباحًا - 11 مساءً</p>
+
+    </div>
+</a> 
+
+<a href="https://maps.app.goo.gl/LZoDy7F9QSDgTBtS6" target="_blank"><div class="branch ">
+    <h3> 2 فرع عنيزة</h3>
+    <p>حي الرفاع طريق الملك عبدالعزيز </p>
+    <p class="working-hours">ساعات العمل: 7 صباحًا - 11 مساءً</p>
+
+</div>
+</a> 
+<a href="https://maps.app.goo.gl/di73Kvwnb9SYbLcK9" target="_blank"><div class="branch ">
+    <h3> 3 فرع عنيزة</h3>
+    <p class="font-md">شارع زامل العبدالله ، حي الفاخرية</p>
+    <p class="working-hours">ساعات العمل: 7 صباحًا - 11 مساءً</p>
+
+</div>
+</a> 
+
+<a href="https://maps.app.goo.gl/VF3eePy8iyoNWV7x6" target="_blank"><div class="branch ">
+    <h3>  فرع بريدة </h3>
+    <p> طريق عمر بن عبدالعزيز، حي البساتين </p>
+    <p class="working-hours">ساعات العمل: 7 صباحًا - 11 مساءً</p>
+
+</div>
+</a> 
+<a href="https://maps.app.goo.gl/9AVTu29W2YnQ3XBCA" target="_blank"><div class="branch ">
+    <h3>  2 فرع بريدة </h3>
+    <p> طريق عثمان بن عفان ، حي النهضه</p>
+    <p class="working-hours">ساعات العمل: 7 صباحًا - 11 مساءً</p>
+
+</div>
+</a> 
+
+ 
+
+<a href="https://maps.app.goo.gl/w8CNBLKXyZdEgS9p8" target="_blank"><div class="branch ">
+    <h3>فرع ساجر</h3>
+    <p>الطريق العام</p>
+    <p class="working-hours">ساعات العمل: 7 صباحًا - 11 مساءً</p>
+
+</div>
+</a> 
+
+<a href="https://maps.app.goo.gl/559E2YuxbL8M25FGA" target="_blank"><div class="branch ">
+    <h3>فرع المذنب</h3>
+    <p>طريق الملك سعود  حي الجديدة</p>
+    <p class="working-hours">ساعات العمل: 7 صباحًا - 11 مساءً</p>
+
+</div>
+</a> 
+
+<a href="https://maps.app.goo.gl/4KgTVAbAoUWkRPxo8" target="_blank"><div class="branch ">
+    <h3>فرع الاسياح</h3>
+    <p>طريق الملك عبدالعزيز خصيبة</p>
+    <p class="working-hours">ساعات العمل: 7 صباحًا - 11 مساءً</p>
+
+</div>
+</a> 
+
+</div>
+       
+
+
+    <!-- خريطة جوجل -->
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1K_uagmBiJx3txvBDOKUGKIZNpOR64sg&ehbc=2E312F&noprof=1" width="100%" height="100%"></iframe></div> 
+        
+
+        <form action="/submit-contact" method="POST">
+            <h2 class="text-2xl font-bold text-center mb-6">اتصل بنا</h2>
+    
+            <label for="name">الاسم الكامل</label>
+            <input type="text" id="name" name="name" required placeholder="أدخل اسمك الكامل">
+    
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" required placeholder="أدخل بريدك الإلكتروني">
+    
+            <label for="message">رسالتك</label>
+            <textarea id="message" name="message" rows="4" required placeholder="أدخل رسالتك"></textarea>
+    
+            <button type="submit">إرسال الرسالة</button>
+        </form>
+        <footer class="bg-gray-900 p-10 font-[sans-serif] tracking-wide flex ">
+
+        <div class="flex ml-[150px] mt-8">
+            <div><p class="text-white flex ml-[110px] font-sans mb-3 ">عنوان الشركة</p>
+
+                <div class="flex text-[#a8aeac] font-serif "><p class="m-2 text-sm font-semibold  ml-[70px]">المستودعات ,عنيزة,56463</p>
+                    <i class="fa-solid fa-location-dot fa-lg mt-4" style="color: #c0a456;"></i></div>
+
+                    <div class="flex text-[#a8aeac] font-serif ">
+                        <p  class="m-2 text-sm font-semibold ml-[125px]">0581472005</p>
+                        <i class="fa-brands fa-whatsapp fa-lg mt-4" style="color: #c0a456;"></i>
+                    </div>
+
+
+                    <div class="flex text-[#a8aeac] font-serif "> <a href="tel:+966581472005" class="m-2 text-sm font-semibold ml-[125px]" >0581472005</a>
+               <i class="fa-solid fa-phone fa-lg mt-4" style="color: #c0a456;"></i></div>
+               <div>
+                <div class="flex text-[#a8aeac] font-serif "> <a href="mailto:roqnkamhyathr@gmail.com " class="m-2 text-xs font-semibold ml-[30px]">roqnkamhyathr@gmail.com</a>
+                     <i class="fa-solid fa-envelope fa-lg mt-4  " style="color: #c0a456;"></i> </div>
+
+               </div>
+
+            
+            
+            
+
+        </div>
+        </div>
+
+        <div class="flex mt-8">
+            <div><p class="text-white flex ml-[90px] font-sans mb-3">التواصل الاجتماعي</p>
+
+                <div class="flex text-white font-serif ml-[90px] ">
+                    <p class="text-[#a8aeac] m-2 text-sm font-semibold"><a href="https://www.snapchat.com/add/ruknkamhiat">ruknkamhiat</a></p>
+                    <i class="fa-brands fa-snapchat fa-lg mt-4" style="color: #c0a456;"></i>
+                </div>
+
+                <div class="flex text-white font-serif ml-[90px] ">
+                    <p class="text-[#a8aeac] m-2 text-sm font-semibold"><a href="https://www.instagram.com/ruknkamhiat/?igshid=NTc4MTIwNjQ2YQ%3D%3D">ruknkamhiat</a> </p>
+                    <i class="fa-brands fa-instagram fa-lg mt-4" style="color: #c0a456;"></i>
+                </div>
+
+                <div class="flex text-white font-serif ml-[90px] ">
+                    <p class="text-[#a8aeac] m-2 text-sm font-semibold"><a href="https://www.instagram.com/ruknkamhiat/?hl=ar">ruknkamhiat</a> </p>
+                    <i class="fa-brands fa-tiktok fa-lg mt-4"style="color: #c0a456;"></i>
+                </div>
+
+
+
+        </div>
+        </div>
+
+        <div class="flex mt-8">
+            <div class="font-sans mb-3">
+                <p class="text-white flex ml-[110px] font-sans mb-3">روابط مهمه</p>
+                <p class=" flex ml-[130px] text-[#a8aeac] mt-2  font-semibold font-serif">اتصل بنا</p>
+                <p class="text-[#a8aeac]  mt-2 font-semibold flex ml-[130px] font-serif">من نحن</p>
+                <p class="text-[#a8aeac]  mt-2 font-semibold flex ml-[130px] font-serif">منتجاتنا</p>
+            </div>
+        </div>
+
+        <div><a href=""><img src="/src/img/logo.png" alt="" class=" ml-[200px] w-48"></a>
+        <p class="ml-[200px] font-sans text-[#c0a456] font-bold">مخابز وحلويات ركن قمحيات</p>
+        <p class="ml-[215px] font-sans text-[#a8aeac] font-extralight text-[8px]">Qamhiyat Corner Bakeries and Sweets</p>
+
+        </div>
+
+
+
+    </footer>
+    <div class="bg-gray-900 pb-10 font-[sans-serif] tracking-wide  ">
+        <p class="text-[#a8aeac] text-center">جميع الحقوق محفوظة © 2024</p>
+    </div>
+
+</div>
+
+</body>
+</html>

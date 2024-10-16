@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/e983f43ae5.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: 300px;
+        }
+
+        .swiper-slide h1 {
+            font-size: 2rem;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        .text-slider-container {
+            margin: 20px;
+            pointer-events: none; /* يمنع النصوص من التأثير على التفاعل مع العناصر خلفها */
+        }
+
+        .text-slider-container a {
+            pointer-events: auto; /* يسمح للروابط بالتفاعل */
+        }
+
+        .bg-background {
+            position: relative;
+        }
+
+        .bg-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none; /* يمنع النصوص من التأثير على التفاعل مع العناصر خلفها */
+        }
+
+        .bg-content a {
+            pointer-events: auto; /* يسمح للروابط بالتفاعل */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الخلفية -->
+    <div class="bg-[url('/src/img/bg.png')] bg-cover h-[800px] opacity-90 flex justify-center items-center relative bg-background">
+        <div class="bg-content">
+            <ul class="absolute top-4 left-20 flex space-x-6">
+                <li class=""><a href="contact.html" class="text-white hover:text-[#d9c26f]">اتصل بنا</a></li>
+                <li><a href="careers.html" class="text-white hover:text-[#d9c26f]">التوظيف</a></li>
+                <li><a href="about_us.html" class="text-white hover:text-[#d9c26f]">عن الشركة</a></li>
+                <li><a href="prodct.html" class="text-white hover:text-[#d9c26f]">منتجاتنا</a></li>
+                <li><a href="index.html" class="text-white hover:text-[#d9c26f]">الرئيسية</a></li>
+            </ul>
+            <div class="absolute top-4 right-20">
+                <a href="index.html"><img class="w-20 h-20" src="/src/img/logo.png" alt="لوغو"></a>
+            </div>
+        </div>
+
+        <!-- Swiper للكلمات في منتصف الصفحة -->
+        <div class="swiper-container swiper-words text-slider-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h1><span class="text-[#d9c26f]">أشهى المخبوزات و الحلويات </span> طازجة من الفرن يومياً</h1>
+                </div>
+                <div class="swiper-slide text-[#d9c26f]">
+                    <h1 class="text-[#d9c26f]"><span class="text-[#d9c26f]">اجعل مناسباتك أكثر حلاوة مع تشكيلة حلوياتنا الفاخرة  </span>   </h1>
+                </div>
+                <div class="swiper-slide">
+                    <h1 class="text-[#d9c26f]"><span class="text-[#d9c26f]">  نستخدم أجود المكونات الطبيعية لضمان نكهة لا تُنسى</span >      </h1>
+                </div>
+                <div class="swiper-slide">
+                    <h1><span class="text-[#d9c26f]">مخبزك المفضل لجميع المناسبات</span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- نبذة عن الشركة -->
+    <div class="flex">
+        <div class="w-1/2"><img src="/src/img/shop.jpg" alt="نبذة عن الشركة" class="w-full h-auto"></div>
+        <div class="bg-[#f5f0e1] w-1/2 text-center">
+            <h1 class="text-[#d9c26f] text-3xl mt-20 font-bold">نبذة عن الشركة</h1>
+            <p class="m-20 text-2xl">نتميز بأشهى المخبوزات والمعجنات الطازجة ونفتخر بتقديم تجربة لذيذة لتشكيلة واسعة من الحلويات الشرقية والغربية حتى الشوكلاتة</p>
+            <a href="about.html" class="bg-[#d9c26f] text-white py-3 px-6 rounded-md">عن الشركة</a>
+        </div>
+    </div>
+
+    <!-- منتجاتنا -->
+    <div class="text-center bg-[#faf8ef] pb-16">
+        <h1 class="text-4xl text-[#d9c26f] font-bold py-8">منتجاتنا</h1>
+        <div class="flex justify-center flex-wrap">
+            <!-- منتج 1 -->
+            <div class="m-6 h-[320px] w-[280px] bg-white shadow-lg hover:shadow-2xl">
+                <img class="h-[70%] w-full object-cover" src="/src/img/bred.jpeg" alt="خبز برجر طازج">
+                <p class="text-[#CDA661] m-5 text-center text-md font-sans font-bold">خبز برجر طازج</p>
+            </div>
+            <!-- منتج 2 -->
+            <div class="m-6 h-[320px] w-[280px] bg-white shadow-lg hover:shadow-2xl">
+                <img class="h-[70%] w-full object-cover" src="/src/img/bred1.jpeg" alt="فطائر منوعة">
+                <p class="text-[#CDA661] m-5 text-center text-md font-sans font-bold">فطائر منوعة</p>
+            </div>
+            <!-- منتج 3 -->
+            <div class="m-6 h-[320px] w-[280px] bg-white shadow-lg hover:shadow-2xl">
+                <img class="h-[70%] w-full object-cover" src="/src/img/ash.jpeg" alt="عش البلبل">
+                <p class="text-[#CDA661] m-5 text-center text-md font-sans font-bold">عش البلبل</p>
+            </div>
+            <!-- منتج 4 -->
+            <div class="m-6 h-[320px] w-[280px] bg-white shadow-lg hover:shadow-2xl">
+                <img class="h-[70%] w-full object-cover" src="/src/img/bred11.jpeg" alt="كيك">
+                <p class="text-[#CDA661] m-5 text-center text-md font-sans font-bold">كيك</p>
+            </div>
+
+            <!-- منتج 5 -->
+            <div class="m-6 h-[320px] w-[280px] bg-white shadow-lg hover:shadow-2xl">
+                <img class="h-[70%] w-full object-cover" src="/src/img/byglya.jpeg" alt="كيك">
+                <p class="text-[#CDA661] m-5 text-center text-md font-sans font-bold">كيك</p>
+            </div>
+            <!-- منتج 6 -->
+            <div class="m-6 h-[320px] w-[280px] bg-white shadow-lg hover:shadow-2xl">
+                <img class="h-[70%] w-full object-cover" src="/src/img/mafen.jpeg" alt="مافن">
+                <p class="text-[#CDA661] m-5 text-center text-md font-sans font-bold">مافن</p>
+            </div>
+            <!-- منتج 7 -->
+            <div class="m-6 h-[320px] w-[280px] bg-white shadow-lg hover:shadow-2xl">
+                <img class="h-[70%] w-full object-cover" src="/src/img/mamole.jpeg" alt="معمول">
+                <p class="text-[#CDA661] m-5 text-center text-md font-sans font-bold">معمول</p>
+            </div>
+            <!-- منتج 8 -->
+            <!-- منتج 8 -->
+            <div class="m-6 h-[320px] w-[280px] bg-white shadow-lg hover:shadow-2xl">
+                <img class="h-[70%] w-full object-cover" src="/src/img/trimeso.jpeg" alt="تيراميسو">
+                <p class="text-[#CDA661] m-5 text-center text-md font-sans font-bold">تيراميسو</p>
+            </div>
+        </div>
+
+        <!-- زر المزيد من المنتجات -->
+        <div class="mt-8">
+            <a href="more-products.html" class="bg-[#d9c26f] text-white py-3 px-6 rounded-md hover:bg-[#c0a456]">المزيد من المنتجات</a>
+        </div>
+    </div>
+
+    <!-- معرض الصور -->
+    <div class="container mx-auto py-8 bg-[#faf8ef]">
+        <div class="swiper-container swiper-images">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/src/img/2016-05-27.jpg" alt="صورة 1" class="w-[300px] h-[300px] object-cover rounded-lg shadow-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/src/img/2020-01-02.jpg" alt="صورة 2" class="w-[300px] h-[300px] object-cover rounded-lg shadow-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/src/img/2021-06-30.jpg" alt="صورة 3" class="w-[300px] h-[300px] object-cover rounded-lg shadow-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/src/img/2022-05-15.jpg" alt="صورة 4" class="w-[300px] h-[300px] object-cover rounded-lg shadow-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/src/img/2023-12-26.jpg" alt="صورة 5" class="w-[300px] h-[300px] object-cover rounded-lg shadow-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/src/img/2021-06-30.jpg" alt="صورة 6" class="w-[300px] h-[300px] object-cover rounded-lg shadow-lg">
+                </div>
+            </div>
+            <!-- إزالة أزرار التنقل -->
+        </div>
+    </div>
+
+
+    <footer class="bg-gray-900 p-10 font-[sans-serif] tracking-wide flex ">
+
+        <div class="flex ml-[150px] mt-8">
+            <div><p class="text-white flex ml-[110px] font-sans mb-3 ">عنوان الشركة</p>
+
+                <div class="flex text-[#a8aeac] font-serif "><p class="m-2 text-sm font-semibold  ml-[70px]">المستودعات ,عنيزة,56463</p>
+                    <i class="fa-solid fa-location-dot fa-lg mt-4" style="color: #c0a456;"></i></div>
+
+                    <div class="flex text-[#a8aeac] font-serif ">
+                        <p  class="m-2 text-sm font-semibold ml-[125px]">0581472005</p>
+                        <i class="fa-brands fa-whatsapp fa-lg mt-4" style="color: #c0a456;"></i>
+                    </div>
+
+
+                    <div class="flex text-[#a8aeac] font-serif "> <a href="tel:+966581472005" class="m-2 text-sm font-semibold ml-[125px]" >0581472005</a>
+               <i class="fa-solid fa-phone fa-lg mt-4" style="color: #c0a456;"></i></div>
+               <div>
+                <div class="flex text-[#a8aeac] font-serif "> <a href="mailto:roqnkamhyathr@gmail.com " class="m-2 text-xs font-semibold ml-[30px]">roqnkamhyathr@gmail.com</a>
+                     <i class="fa-solid fa-envelope fa-lg mt-4  " style="color: #c0a456;"></i> </div>
+
+               </div>
+
+            
+            
+            
+
+        </div>
+        </div>
+
+        <div class="flex mt-8">
+            <div><p class="text-white flex ml-[90px] font-sans mb-3">التواصل الاجتماعي</p>
+
+                <div class="flex text-white font-serif ml-[90px] ">
+                    <p class="text-[#a8aeac] m-2 text-sm font-semibold"><a href="https://www.snapchat.com/add/ruknkamhiat">ruknkamhiat</a></p>
+                    <i class="fa-brands fa-snapchat fa-lg mt-4" style="color: #c0a456;"></i>
+                </div>
+
+                <div class="flex text-white font-serif ml-[90px] ">
+                    <p class="text-[#a8aeac] m-2 text-sm font-semibold"><a href="https://www.instagram.com/ruknkamhiat/?igshid=NTc4MTIwNjQ2YQ%3D%3D">ruknkamhiat</a> </p>
+                    <i class="fa-brands fa-instagram fa-lg mt-4" style="color: #c0a456;"></i>
+                </div>
+
+                <div class="flex text-white font-serif ml-[90px] ">
+                    <p class="text-[#a8aeac] m-2 text-sm font-semibold"><a href="https://www.instagram.com/ruknkamhiat/?hl=ar">ruknkamhiat</a> </p>
+                    <i class="fa-brands fa-tiktok fa-lg mt-4"style="color: #c0a456;"></i>
+                </div>
+
+
+
+        </div>
+        </div>
+
+        <div class="flex mt-8">
+            <div class="font-sans mb-3">
+                <p class="text-white flex ml-[110px] font-sans mb-3">روابط مهمه</p>
+                <p class=" flex ml-[130px] text-[#a8aeac] mt-2  font-semibold font-serif">اتصل بنا</p>
+                <p class="text-[#a8aeac]  mt-2 font-semibold flex ml-[130px] font-serif">من نحن</p>
+                <p class="text-[#a8aeac]  mt-2 font-semibold flex ml-[130px] font-serif">منتجاتنا</p>
+            </div>
+        </div>
+
+        <div><a href=""><img src="/src/img/logo.png" alt="" class=" ml-[200px] w-48"></a>
+        <p class="ml-[200px] font-sans text-[#c0a456] font-bold">مخابز وحلويات ركن قمحيات</p>
+        <p class="ml-[215px] font-sans text-[#a8aeac] font-extralight text-[8px]">Qamhiyat Corner Bakeries and Sweets</p>
+
+        </div>
+
+
+
+    </footer>
+    <div class="bg-gray-900 pb-10 font-[sans-serif] tracking-wide  ">
+        <p class="text-[#a8aeac] text-center">جميع الحقوق محفوظة © 2024</p>
+    </div>
+
+  
+
+    <!-- إعداد Swiper -->
+    <script>
+        var swiperWords = new Swiper('.swiper-words', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        var swiperImages = new Swiper('.swiper-images', {
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBxEsl6xuMCiQw-NN1qe5ft7EgJLO-Pwis",
+          authDomain: "qomhat-f8648.firebaseapp.com",
+          projectId: "qomhat-f8648",
+          storageBucket: "qomhat-f8648.appspot.com",
+          messagingSenderId: "253556940783",
+          appId: "1:253556940783:web:f4b8fc2a39f77b863ce01a",
+          measurementId: "G-5LQV9YLZWE"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+
+</body>
+</html>

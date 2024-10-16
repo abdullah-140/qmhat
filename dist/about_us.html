@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/e983f43ae5.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+
+        
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: 300px;
+        }
+
+        .swiper-slide h1 {
+            font-size: 2rem;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        .text-slider-container {
+            margin: 20px;
+            pointer-events: none; /* يمنع النصوص من التأثير على التفاعل مع العناصر خلفها */
+        }
+
+        .text-slider-container a {
+            pointer-events: auto; /* يسمح للروابط بالتفاعل */
+        }
+
+        .bg-background {
+            position: relative;
+        }
+
+        .bg-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none; /* يمنع النصوص من التأثير على التفاعل مع العناصر خلفها */
+        }
+
+        .bg-content a {
+            pointer-events: auto; /* يسمح للروابط بالتفاعل */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الخلفية -->
+    <div class="bg-[url('/src/img/Image.jpg')] bg-cover h-[400px] opacity-100 flex justify-center items-center relative bg-background">
+        <div class="bg-content">
+            <ul class="absolute top-4 left-20 flex space-x-6">
+                <li class=""><a href="contact.html" class="text-white hover:text-[#d9c26f]">اتصل بنا</a></li>
+                <li><a href="careers.html" class="text-white hover:text-[#d9c26f]">التوظيف</a></li>
+                <li><a href="about_us.html" class="text-white hover:text-[#d9c26f]">عن الشركة</a></li>
+                <li><a href="prodct.html" class="text-white hover:text-[#d9c26f]">منتجاتنا</a></li>
+                <li><a href="index.html" class="text-white hover:text-[#d9c26f]">الرئيسية</a></li>
+            </ul>
+            <div class="absolute top-4 right-20">
+                <a href="index.html"><img class="w-20 h-20" src="/dist/src/img/logo.png" alt="لوغو"></a>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div class="bg-[#f5f0e1] text-center flex flex-col items-center justify-center py-10">
+        <h1 class="text-[#d9c26f] pt-6 text-4xl font-bold">شركة مخابز وحلويات ركن قمحيات</h1>
+        <h1 class="text-[#663e18] pt-3 text-2xl font-semibold">Qamhiyat Corner Bakeries and Sweets</h1>
+        <p class="text-[#000] pt-3 text-xl font-semibold max-w-[500px] mx-auto leading-relaxed">
+            منذ عام 2005، نقدم لعملائنا في المملكة العربية السعودية أشهى أنواع الخبز والحلويات الطازجة،
+            بفضل خبراتنا التي تمتد لأكثر من عشرين عامًا، ونحن ملتزمون بتوفير منتجات عالية الجودة تلبي جميع الأذواق.
+        </p>
+    </div>
+
+    <div class="flex items-center justify-center gap-4 p-10">
+        <!-- النص -->
+        <div class="bg-[#f5f0e1] text-center flex-1 max-w-[800px] p-6 rounded-lg shadow-lg">
+            <h2 class="text-4xl font-bold text-[#d9c26f] mb-2">طازج</h2>
+            <h3 class="text-xl font-semibold text-[#663e18] mb-4">ولذيذ</h3>
+            <p class="text-md text-[#663e18] leading-relaxed font-serif font-semibold">
+                في ركن القمحيات، نجمع بين الأصالة السعودية والابتكار العالمي. باستخدام أحدث التقنيات الآلية وأجود المكونات الطبيعية، نقدم لكِ تشكيلة واسعة من الخبز والحلويات الطازجة واللذيذة، المصنوعة خصيصًا لتناسب ذوقك.
+            </p>
+        </div>
+        
+        <!-- الفيديو -->
+        <div class="flex-1 max-w-[600px]">
+            <div class="relative pb-[56.25%]"> <!-- نسبة العرض إلى الارتفاع 16:9 -->
+                <video autoplay loop muted class="absolute top-0 left-0 w-full h-full object-cover rounded-lg shadow-lg">
+                    <source src="/src/vid/WhatsApp Video 2024-09-15 at 1.03.17 PM.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+    
+       
+      
+
+
+
+    <!-- معرض الصور -->
+    <div class="container mx-auto py-8 bg-[#faf8ef]">
+        <div class="swiper-container swiper-images">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/src/img/2016-05-27.jpg" alt="صورة 1" class="w-[300px] h-[300px] object-cover rounded-lg shadow-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/src/img/2020-01-02.jpg" alt="صورة 2" class="w-[300px] h-[300px] object-cover rounded-lg shadow-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/src/img/2021-06-30.jpg" alt="صورة 3" class="w-[300px] h-[300px] object-cover rounded-lg shadow-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/src/img/2022-05-15.jpg" alt="صورة 4" class="w-[300px] h-[300px] object-cover rounded-lg shadow-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/src/img/2023-12-26.jpg" alt="صورة 5" class="w-[300px] h-[300px] object-cover rounded-lg shadow-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/src/img/2021-06-30.jpg" alt="صورة 6" class="w-[300px] h-[300px] object-cover rounded-lg shadow-lg">
+                </div>
+            </div>
+            <!-- إزالة أزرار التنقل -->
+        </div>
+    </div>
+
+
+    <footer class="bg-gray-900 p-10 font-[sans-serif] tracking-wide flex ">
+
+        <div class="flex ml-[150px] mt-8">
+            <div><p class="text-white flex ml-[110px] font-sans mb-3 ">عنوان الشركة</p>
+
+                <div class="flex text-[#a8aeac] font-serif "><p class="m-2 text-sm font-semibold  ml-[70px]">المستودعات ,عنيزة,56463</p>
+                    <i class="fa-solid fa-location-dot fa-lg mt-4" style="color: #c0a456;"></i></div>
+
+                    <div class="flex text-[#a8aeac] font-serif ">
+                        <p  class="m-2 text-sm font-semibold ml-[125px]">0581472005</p>
+                        <i class="fa-brands fa-whatsapp fa-lg mt-4" style="color: #c0a456;"></i>
+                    </div>
+
+
+                    <div class="flex text-[#a8aeac] font-serif "> <a href="tel:+966581472005" class="m-2 text-sm font-semibold ml-[125px]" >0581472005</a>
+               <i class="fa-solid fa-phone fa-lg mt-4" style="color: #c0a456;"></i></div>
+               <div>
+                <div class="flex text-[#a8aeac] font-serif "> <a href="mailto:roqnkamhyathr@gmail.com " class="m-2 text-xs font-semibold ml-[30px]">roqnkamhyathr@gmail.com</a>
+                     <i class="fa-solid fa-envelope fa-lg mt-4  " style="color: #c0a456;"></i> </div>
+
+               </div>
+
+            
+            
+            
+
+        </div>
+        </div>
+
+        <div class="flex mt-8">
+            <div><p class="text-white flex ml-[90px] font-sans mb-3">التواصل الاجتماعي</p>
+
+                <div class="flex text-white font-serif ml-[90px] ">
+                    <p class="text-[#a8aeac] m-2 text-sm font-semibold"><a href="https://www.snapchat.com/add/ruknkamhiat">ruknkamhiat</a></p>
+                    <i class="fa-brands fa-snapchat fa-lg mt-4" style="color: #c0a456;"></i>
+                </div>
+
+                <div class="flex text-white font-serif ml-[90px] ">
+                    <p class="text-[#a8aeac] m-2 text-sm font-semibold"><a href="https://www.instagram.com/ruknkamhiat/?igshid=NTc4MTIwNjQ2YQ%3D%3D">ruknkamhiat</a> </p>
+                    <i class="fa-brands fa-instagram fa-lg mt-4" style="color: #c0a456;"></i>
+                </div>
+
+                <div class="flex text-white font-serif ml-[90px] ">
+                    <p class="text-[#a8aeac] m-2 text-sm font-semibold"><a href="https://www.instagram.com/ruknkamhiat/?hl=ar">ruknkamhiat</a> </p>
+                    <i class="fa-brands fa-tiktok fa-lg mt-4"style="color: #c0a456;"></i>
+                </div>
+
+
+
+        </div>
+        </div>
+
+        <div class="flex mt-8">
+            <div class="font-sans mb-3">
+                <p class="text-white flex ml-[110px] font-sans mb-3">روابط مهمه</p>
+                <p class=" flex ml-[130px] text-[#a8aeac] mt-2  font-semibold font-serif">اتصل بنا</p>
+                <p class="text-[#a8aeac]  mt-2 font-semibold flex ml-[130px] font-serif">من نحن</p>
+                <p class="text-[#a8aeac]  mt-2 font-semibold flex ml-[130px] font-serif">منتجاتنا</p>
+            </div>
+        </div>
+
+        <div><a href=""><img src="/src/img/logo.png" alt="" class=" ml-[200px] w-48"></a>
+        <p class="ml-[200px] font-sans text-[#c0a456] font-bold">مخابز وحلويات ركن قمحيات</p>
+        <p class="ml-[215px] font-sans text-[#a8aeac] font-extralight text-[8px]">Qamhiyat Corner Bakeries and Sweets</p>
+
+        </div>
+
+
+
+    </footer>
+    <div class="bg-gray-900 pb-10 font-[sans-serif] tracking-wide  ">
+        <p class="text-[#a8aeac] text-center">جميع الحقوق محفوظة © 2024</p>
+    </div>
+
+  
+
+    <!-- إعداد Swiper -->
+    <script>
+
+
+        var swiperImages = new Swiper('.swiper-images', {
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+
+</body>
+</html>
